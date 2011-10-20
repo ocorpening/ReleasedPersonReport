@@ -1,0 +1,1 @@
+This is a Grails project for reading the Harris County jail website and mining the data regarding which persons were released.

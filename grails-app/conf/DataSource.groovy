@@ -17,10 +17,12 @@ environments {
             //url = "jdbc:hsqldb:mem:devDB"
 			pooling = true
             dbCreate = "update"
-            url = "jdbc:mysql://localhost/releasedPerps"
+            //url = "jdbc:mysql://localhost/releasedPerps"
+            url = "jdbc:mysql://localhost/owenjc_jims"
 			driverClassName = "com.mysql.jdbc.Driver"
 			username = "root"
-			password = "14the\$"
+			//password = "14the\$"
+			password = "7704L@tta"
 			loggingSql = false
         }
     }

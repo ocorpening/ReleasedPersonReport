@@ -21,7 +21,6 @@
     	<g:form controller="arrestData" method="GET">
 	        <div class="nav">
 	            <span class="menuButton"><a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></span>
-	            <span class="menuButton"><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></span>
 				<g:actionSubmit value="refresh" action="list" />
 	        </div>
 	        <div class="body">
@@ -68,15 +67,15 @@
 	                    <tbody>
 	                    <g:each in="${arrestDataInstanceList}" status="i" var="arrestDataInstance">
 	                        <tr class="${(i % 2) == 0 ? 'odd' : 'even'}">
-	                            <td><g:link action="show" id="${arrestDataInstance.booking_number}">${arrestDataInstance.booking_number}</g:link></td>
+	                            <td><g:link action="show" id="${arrestDataInstance.bookingNumber}">${arrestDataInstance.bookingNumber}</g:link></td>
 	                            <td>${arrestDataInstance.name}</td>
-	                        	<td>"${arrestDataInstance.charge_Wording}"</td>
-	                        	<td>"${arrestDataInstance.charge_Level}"</td>
-	                        	<td>"${arrestDataInstance.case_Number}"</td>
-	                        	<td><g:formatDate format="yyyy-MM-dd" date="${arrestDataInstance.arrest_date}"/></td>
-	                        	<td><g:formatDate format="yyyy-MM-dd" date="${arrestDataInstance.booking_date}"/></td>
-	                        	<td><g:formatDate format="yyyy-MM-dd" date="${arrestDataInstance.release_date}"/></td>
-	                        	<td>"${arrestDataInstance.bond_Amount}"</td>
+	                        	<td>"${arrestDataInstance.chargeWording}"</td>
+	                        	<td>"${arrestDataInstance.chargeLevel}"</td>
+	                        	<td>"${arrestDataInstance.caseNumber}"</td>
+	                        	<td><g:formatDate format="yyyy-MM-dd" date="${arrestDataInstance.arrestDate}"/></td>
+	                        	<td><g:formatDate format="yyyy-MM-dd" date="${arrestDataInstance.bookingDate}"/></td>
+	                        	<td><g:formatDate format="yyyy-MM-dd" date="${arrestDataInstance.releaseDate}"/></td>
+	                        	<td>"${arrestDataInstance.bondAmount}"</td>
 	                        	<td>"${arrestDataInstance.city}</td>
 	                        	<td>"${arrestDataInstance.street}"</td>
 	                        	<td>"${arrestDataInstance.zip}"</td>
